@@ -1,3 +1,5 @@
+> A fork to experiment seeding the phrase to always get deterministic results. Current status: Not started
+
 # scrab
 
 A random word and sentence generation utility.
