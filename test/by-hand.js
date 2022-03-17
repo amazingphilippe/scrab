@@ -48,7 +48,11 @@ run(function () {
 });
 
 run(function () {
-  scrab.words({seed: 0.42});
+  scrab.words({ seed: 0.42 });
+});
+
+run(function () {
+  scrab.words({ seed: 0.99, min: 5, max: 5 });
 });
 
 run(function () {

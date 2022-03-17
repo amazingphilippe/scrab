@@ -4,11 +4,15 @@
 
 A random word and sentence generation utility.
 
-Usage:
+## Install
+
+This will install the regular unseeded package a the moment.
 
 ```bash
 npm install --save scrab
 ```
+
+## Usage
 
 ```javascript
 var scrab = require('scrab');
@@ -59,4 +63,36 @@ scrab.sentence({
 });
 // => GRANTED DRUNKS; THEMSELVES DISCUSSES!!!
 // => REPRODUCE LIMITED PROGRESSIVE SAVES, CONCRETE DOPING!!!
+```
+
+## Usage with a seed
+
+Set seed to a number between 0 and 1. You should always get the same word, words or sentence back.
+
+```javascript
+
+// A word
+scrab.word({
+  seed: 0.69,
+});
+// => lifetime
+// => lifetime
+// => lifetime
+
+// Words. The seed also impacts the number of words, when not specified.
+scrab.words({seed: 0.42});
+// => discover,excessive,connections
+// => discover,excessive,connections
+// => discover,excessive,connections
+
+scrab.words({ seed: 0.99, min: 5, max: 5 });
+// => coding,mistake,heat,art,patch
+// => coding,mistake,heat,art,patch
+// => coding,mistake,heat,art,patch
+
+// A sentence
+scrab.sentence({ seed: 0.314159, min: 8, max: 15 });
+// => Tarter approved imposed within by to concerning for off behind from on along considering!
+// => Tarter approved imposed within by to concerning for off behind from on along considering!
+// => Tarter approved imposed within by to concerning for off behind from on along considering!
 ```
