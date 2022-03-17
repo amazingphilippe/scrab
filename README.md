@@ -1,8 +1,6 @@
-> A fork to experiment seeding the phrase to always get deterministic results. Current status: This actually works!
-
 # scrab Seeded!
 
-A random word and sentence generation utility.
+A random word and sentence generation utility. Forked from [jacksonrayhamilton/scrab](https://github.com/jacksonrayhamilton/scrab). Updated to support a seed option.
 
 ## Install
 
