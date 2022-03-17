@@ -1,4 +1,4 @@
-> A fork to experiment seeding the phrase to always get deterministic results. Current status: Not started
+> A fork to experiment seeding the phrase to always get deterministic results. Current status: This actually works!
 
 # scrab
 
